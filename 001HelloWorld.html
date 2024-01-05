@@ -1,0 +1,24 @@
+<!-- interactive text -->
+<html>
+  <head>
+    <style>
+      .interactive-text {
+        color: blue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="interactiveText" class="interactive-text">Click Me!</h1>
+    <script>
+      const interactiveTextElement = document.getElementById("interactiveText");
+      interactiveTextElement.addEventListener("click", function () {
+        interactiveTextElement.innerHTML = 'You Clicked "Click Me"';
+        interactiveTextElement.style.color = "green";
+      });
+      console.log("Hello World");
+    </script>
+  </body>
+</html>
+<!-- view the file in a browser -> click the text "Click Me!" -> 
+  open "Developer Console" to view the "Hello World" console message  -->
